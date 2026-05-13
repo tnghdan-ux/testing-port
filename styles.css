@@ -1293,6 +1293,6 @@ footer {
 }
 
 .contact-photo {
-  transform: scale(1.12);
+  transform: scale(2);
   transform-origin: center;
 }
