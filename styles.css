@@ -875,7 +875,7 @@ ul { list-style: none; }
 
 .contact-photo img {
   border-radius: var(--radius-lg);
-  width: 100%;
+  width: 250%;
 }
 
 /* ── Footer ── */
@@ -1318,4 +1318,30 @@ footer {
   max-width: none;
   object-fit: contain;
   object-position: bottom center;
+}
+#hero {
+  position: relative;
+  overflow: hidden;
+  min-height: calc(100vh - 74px);
+}
+
+.hero-container {
+  position: relative;
+  min-height: calc(100vh - 74px);
+}
+
+.hero-photo {
+  position: absolute;
+  right: 8%;
+  bottom: 0;
+  height: 82%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero-photo img {
+  height: 100%;
+  width: auto;
+  max-width: none;
+  display: block;
 }
