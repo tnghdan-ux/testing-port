@@ -1287,3 +1287,12 @@ footer {
   .future-vision { grid-template-columns: 1fr; }
   .image-grid-3 { grid-template-columns: 1fr; }
 }
+.hero-photo {
+  transform: scale(1.12);
+  transform-origin: center;
+}
+
+.contact-photo {
+  transform: scale(1.12);
+  transform-origin: center;
+}
