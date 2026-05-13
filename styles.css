@@ -308,8 +308,8 @@ ul { list-style: none; }
 }
 
 .hero-photo img {
-  width: 400%;
-  max-width: 400%;
+  width: 250%;
+  max-width: 250%;
   height: auto;
   border-radius: var(--radius-lg);
   display: block;
@@ -1295,4 +1295,27 @@ footer {
 .contact-photo {
   transform: scale(1.12);
   transform-origin: center;
+}
+#hero {
+  min-height: calc(100vh - 74px);
+  display: flex;
+  align-items: stretch;
+  padding-bottom: 0;
+}
+
+.hero-container {
+  align-items: stretch;
+}
+
+.hero-photo {
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero-photo img {
+  height: 78vh;
+  width: auto;
+  max-width: none;
+  object-fit: contain;
+  object-position: bottom center;
 }
