@@ -1350,19 +1350,37 @@ footer {
   max-width: 100%;
   height: auto;
 }
-/* FIX HERO COVER POSITION */
+/* ── Hero Photo ── */
+#hero {
+  overflow: hidden;
+  position: relative;
+  min-height: calc(100vh - var(--nav-h));
+  display: flex;
+  align-items: stretch;
+  padding-bottom: 0;
+}
+
 .hero-container {
   position: relative;
+  width: 100%;
+  min-height: calc(100vh - var(--nav-h));
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  padding: 80px 40px;
 }
 
 .hero-photo {
   position: absolute;
-  right: 0 !important;
+  right: 0;
   bottom: 0;
-  height: 82%;
+  height: 88%;
+  width: 50%;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
+  transform: none;
 }
 
 .hero-photo img {
@@ -1370,17 +1388,38 @@ footer {
   width: auto;
   max-width: none;
   display: block;
+  border-radius: 0;
 }
 
-/* FIX CONTACT IMAGE SIZE */
+/* ── Contact Photo ── */
 .contact-photo {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
+  transform: none;
 }
 
 .contact-photo img {
-  width: 560px !important;
-  max-width: none !important;
+  width: 100% !important;
+  max-width: 680px !important;
   height: auto !important;
+  border-radius: var(--radius-lg);
+}
+
+/* ── Responsive override ── */
+@media (max-width: 900px) {
+  .hero-photo {
+    position: static;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+  }
+  .hero-photo img {
+    height: auto;
+    width: 100%;
+    max-width: 420px;
+  }
+  .contact-photo img {
+    max-width: 100% !important;
+  }
 }
