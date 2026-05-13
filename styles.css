@@ -308,8 +308,8 @@ ul { list-style: none; }
 }
 
 .hero-photo img {
-  width: 150%;
-  max-width: 150%;
+  width: 200%;
+  max-width: 200%;
   height: auto;
   border-radius: var(--radius-lg);
   display: block;
