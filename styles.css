@@ -875,7 +875,7 @@ ul { list-style: none; }
 
 .contact-photo img {
   border-radius: var(--radius-lg);
-  width: 250%;
+  width: 400%;
 }
 
 /* ── Footer ── */
